@@ -94,11 +94,7 @@
     <Reference Include="Microsoft.VisualStudio.ExtensionManager">
       <HintPath>$(DevEnvDir)PrivateAssemblies\Microsoft.VisualStudio.ExtensionManager.dll</HintPath>
       <Private>False</Private>
-    </Reference>
-    <Reference Condition="'$(VisualStudioVersion)' == '15.0'" Include="Microsoft.VisualStudio.ExtensionEngine">
-      <HintPath>$(DevEnvDir)Microsoft.VisualStudio.ExtensionEngine.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+    </Reference>    
     <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <SpecificVersion>False</SpecificVersion>
     </Reference>

@@ -2,7 +2,7 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011"
 	xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
 	<Metadata>
-		<Identity Id="$PackageName$" Publisher="$Author$" Version="1.0.10.0" Language="en-US" />
+		<Identity Id="$PackageName$" Publisher="$Author$" Version="1.0.0.0" Language="en-US" />
 		<DisplayName>$PackageCaption$</DisplayName>
 		<Description xml:space="preserve">$PackageDescription$</Description>
 		<License>optional-EULA.txt</License>
@@ -16,14 +16,14 @@
 	</Prerequisites>
 	<Dependencies>
 		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework"
-					d:Source="Manual" Version="[4.5, 4.8)" />
+			d:Source="Manual" Version="[4.5, 4.8)" />
 		<Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0"
-					d:Source="Installed" Version="[14.0, 15.0)" />
-		<Dependency Id="OpenGAX-VS2015" DisplayName="GAX 2010 For Visual Studio 2015" d:Source="Installed" Version="[1.0.10, 2.0)" />
-	</Dependencies>
+			d:Source="Installed" Version="[14.0, 15.0)" />
+		<Dependency Id="OpenGAX-VS2015" DisplayName="GAX For Visual Studio 2015" d:Source="Installed" Version="[1.1, 2.0)" />
+  </Dependencies>
 	<Assets>
-		<Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project"
-			d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+		<Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File"
+		  Path="$PackageName$.pkgdef" />
 		<Asset Type="GuidancePackage" d:Source="File" Path="$PackageName$.xml" />
 	</Assets>
 </PackageManifest>
